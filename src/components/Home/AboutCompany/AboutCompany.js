@@ -3,6 +3,7 @@ import aboutImage from '../../../images/aboutImage.jpg';
 import { useSpring, animated } from 'react-spring';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCarSide, faCity, faWarehouse } from '@fortawesome/free-solid-svg-icons';
+import Navbar from '../../Shared/Navbar/Navbar';
 
 const AboutCompany = () => {
     const props = useSpring({ number: 15, from: { number: 0 } });
@@ -11,6 +12,7 @@ const AboutCompany = () => {
 
     return (
         <section className="my-5 container">
+            <Navbar></Navbar>
             <div className="row">
                 <div className="col-md-5 mb-3">
                     <img className="img-fluid" src={aboutImage} alt="" />
